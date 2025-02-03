@@ -50,8 +50,8 @@ cd dsa-repo
 📌 CodeForces: [farazalam2017](https://codeforces.com/profile/farazalam2017)
 ---
 🔗 Connect With Me
-📌 Articles & Blogs: [Hashnode](https://farazalam2017.hashnode.dev/)  
-📌 LinkedIn: [Faraz Alam](https://www.linkedin.com/in/farazalam2017/ )
+📌 Articles & Blogs: [Hashnode] (https://farazalam2017.hashnode.dev/)  
+📌 LinkedIn: [Faraz Alam] (https://www.linkedin.com/in/farazalam2017/ )
 ---
 
 ### **Key Features of This README:**  
