@@ -1,9 +1,9 @@
 {
     "configurations": [
         {
-            "name": "C:\\MinGW\\bin\\gcc.exe",
+            "name": "C:\\MinGW\\bin",
             "includePath": [
-                "C:\\MinGW\\bin"
+                "${default}"
             ],
             "defines": [
                 "_DEBUG",
@@ -13,7 +13,7 @@
             "cStandard": "c11",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "windows-gcc-x86",
-            "compilerPath": "C:\\MinGW\\bin\\gcc.exe"
+            "compilerPath": "C:\\MinGW\\bin"
         }
     ],
     "version": 4
