@@ -25,9 +25,5 @@ int main()
   int sum = 0;
   cout << "Enter the number:- ";
   cin >> number;
-  if (number < 0)
-  {
-    cout << "Factorial of negative number is not defined";
-  }
   cout << "Sum of first " << number << " number is " << function(number, sum);
 }
