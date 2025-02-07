@@ -1,4 +1,4 @@
-/* Statement:- Program to print Nth Fibonacci Number  */
+/* Statement:- Program to print Nth number in Fibonacci series  */
 /* ----------------------------------- */
 /* ----------------------------------- */
 /* Created By:-  Visual Studio Code

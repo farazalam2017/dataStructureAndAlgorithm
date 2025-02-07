@@ -1,4 +1,4 @@
-/* Statement:- In an array count how many times particular element occur using query */
+/* Statement:- In an array count how many times particular element occur using query to show array hashing*/
 /* --------------------------------------------- */
 /* --------------------------------------------- */
 /* example:- arr[]=[1,2,1,3,2] | queries[]= [1,3,4,2,10] = ans[]=[2,1,0,2,0] [1 from queries[] occur two times in arr[], 3 from queries[] occur 1 times and so on ]  */
