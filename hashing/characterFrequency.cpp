@@ -1,4 +1,4 @@
-/* Statement:- Count the characters (both uppercase and lowercase) in a string using given query  */
+/* Statement:- Count the characters (both uppercase and lowercase) in a string using given query to show character array hashing  */
 /* -------------------------------- */
 /* -------------------------------- */
 /* example:- In string "abcdabehf" and a query string "aghbc" character 'a' occur 2 times, 'g' occurs 0 times, 'h' occurs 1 times and so on in a string "abcdabehf" */
