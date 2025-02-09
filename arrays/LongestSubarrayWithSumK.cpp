@@ -16,48 +16,62 @@ using namespace std;
 pair<int, vector<int>> getLongestSubarray(vector<int> &arr, int k)
 {
   int n = arr.size();
-  int sum = 0;
-  int maxLength = 0;
-  vector<int> maxSubarray;
-  for (int i = 0; i < n; i++)
+  int left = 0;
+  int right = 0;
+  int sum = arr[0];
+  int maxLen = 0, startIndex = -1, endIndex = -1;
+  while (right < n)
   {
-    sum += arr[i];
+    // 1.
+    while (left <= right && sum > k)
+    {
+      sum -= arr[left];
+      left++;
+    }
+    // 2.
     if (sum == k)
     {
-      if (maxLength < i + 1)
+      if (right - left + 1 > maxLen)
       {
-        maxLength = i + 1;
-        maxSubarray = arr;
-        return make_pair(maxLength, maxSubarray);
+        maxLen = right - left + 1;
+        startIndex = left;
+        endIndex = right;
       }
     }
-    if (sum > k)
+    // 1.
+    right++;
+    if (right < n)
     {
-      int j = 0;
-      while (sum > k && j < i)
-      {
-        sum -= arr[j];
-        j++;
-      }
-      if (sum == k)
-      {
-        if (maxLength < i - j + 1)
-        {
-          maxLength = i - j + 1;
-          maxSubarray = vector<int>(arr.begin() + j, arr.begin() + i +
-                                                         1);
-          return make_pair(maxLength, maxSubarray);
-        }
-      }
+      sum += arr[right];
     }
   }
-  return make_pair(maxLength, maxSubarray);
+  vector<int> subarray;
+  if (startIndex != -1 && endIndex != -1)
+  {
+    for (int i = startIndex; i <= endIndex; i++)
+    {
+      subarray.push_back(arr[i]);
+    }
+  }
+  return {maxLen, subarray};
 }
 int main()
 {
-  vector<int> arr = {2, 3, 5};
-  int k = 5;
-  pair<int, vector<int>> result = getLongestSubarray(arr, k);
-  cout << "Length of the longest subarray with sum " << k << " is " <
-}
+  vector<int> arr = {2, 3, 4, 1, 9};
+  int k = 10;
+  auto result = getLongestSubarray(arr, k);
+  cout << "Length of longest subarray is " << result.first << "\n";
+  if (!result.second.empty())
+  {
+    cout << "Subarray is :- ";
+    for (int num : result.second)
+    {
+      cout << num << " ";
+    }
+    cout << "\n";
+  }
+  else
+  {
+    cout << "No subarray found\n";
+  }
 }
