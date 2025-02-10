@@ -1,6 +1,10 @@
 /* statement;- union of two sorted arrays */
 /* --------------------------------------- */
 /* --------------------------------------- */
+/* example:- arr1[]={1,2,3,4,5} arr2={2,3,4,4,5}, union={1,2,3,4,5}(common and distinct in both arrays) */
+
+/* --------------------------------------- */
+/* --------------------------------------- */
 /* Created By:-  Visual Studio Code
 Author:- Faraz Alam
 Email:- farazalam2017@gmail.com

@@ -1,4 +1,4 @@
-/* statement:- Given an arrat and a sum k, print the length of longest subarray that sums to k and print that subarray also */
+/* statement:- Given an array and a sum k, print the length of longest subarray that sums to k and print that subarray also */
 /* -------------------------------------- */
 /* -------------------------------------- */
 /* example:- N=3, k=5, arr[]={2,3,5}, ans=2 , subarray={2,3} */
@@ -22,7 +22,7 @@ pair<int, vector<int>> getLongestSubarray(vector<int> &arr, int k)
   int maxLen = 0, startIndex = -1, endIndex = -1;
   while (right < n)
   {
-    // 1.
+    // 3.
     while (left <= right && sum > k)
     {
       sum -= arr[left];
