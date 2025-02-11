@@ -16,7 +16,7 @@ using namespace std;
 int majorityElement(vector<int> v)
 {
   int n = v.size();
-  int count = 0;
+  int count = 0;  
   int element;
   for (int i = 0; i < n; i++)
   {
